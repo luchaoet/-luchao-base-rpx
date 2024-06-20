@@ -1,0 +1,113 @@
+$namespace: 'g' !default;
+
+$display: (
+  i: inline,
+  b: block,
+  ib: inline-block,
+  f: flex,
+  if: inline-flex,
+  n: none,
+);
+$color: (
+  w: #fff,
+  b: #000,
+);
+$background-color: (
+  w: #fff,
+  b: #000,
+  t: transparent,
+);
+$box-shadow: (
+  basic: '0rpx 24rpx 64rpx 8rpx rgba(0, 0, 0, .04), 0rpx 16rpx 40rpx rgba(0, 0, 0, .08)',
+  light: '0rpx 0rpx 24rpx rgba(0, 0, 0, .12)',
+  lighter: '0rpx 0rpx 12rpx rgba(0, 0, 0, .12)',
+  dark: '0rpx 32rpx 96rpx 32rpx rgba(0, 0, 0, .08), 0rpx 24rpx 64rpx rgba(0, 0, 0, .12), 0rpx 16rpx 32rpx -16rpx rgba(0, 0, 0, .16)',
+  n: 'none',
+);
+$background-repeat: (
+  r: repeat,
+  rx: repeat-x,
+  ry: repeat-y,
+  nr: no-repeat,
+);
+$cursor: (
+  p: pointer,
+  na: not-allowed,
+  m: move,
+  zo: zoom-out,
+  zi: zoom-in,
+  d: default,
+);
+$font-weight: (
+  l: lighter,
+  b: bold,
+  400: 400
+);
+$width: (
+  auto: auto,
+  0: 0,
+  50per: 50%,
+  100per: 100%,
+  100vw: 100vw,
+);
+$height: (
+  0: 0,
+  a: auto,
+  100per: 100%,
+  100vh: 100vh,
+);
+$min-height: (
+  0: 0,
+  100per: 100%,
+  100vh: 100vh,
+);
+$timing-function: (
+  e: ease,
+  ei: ease-in,
+  eo: ease-out,
+  eio: ease-in-out,
+);
+$box-sizing: (
+  'bb': border-box,
+  'cb': content-box
+);
+$object-fit: (
+  f: fill,
+  contain: contain,
+  cover: cover,
+  sd: scale-down,
+);
+$opacity: (
+  '0': 0,
+  '01': 0.1,
+  '02': 0.2,
+  '03': 0.3,
+  '04': 0.4,
+  '05': 0.5,
+  '06': 0.6,
+  '07': 0.7,
+  '08': 0.8,
+  '09': 0.9,
+  '1': 1,
+);
+
+$overflow: auto, hidden;
+$float: right, left, none;
+$pointer-events: none, auto;
+$visibility: visible, hidden;
+$text-align: left, center, right;
+$text-decoration: none, underline;
+$direction: top, right, bottom, left;
+$position: relative, absolute, fixed, sticky;
+
+$deg: 0, 90, 180, 270, 360;
+$order: 10, 20, 30, 40, 50, 60;
+$border-width: 0, 1, 2, 4, 6, 8, 10;
+$z-index: -1, 1, 2, 9, 10, 99, 100, 999, 1000, 9999, 10000;
+$font-size: 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50;
+$line-height: 1, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50;
+$number: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40;
+$grid-gap: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40;
+$margin: $number;
+$padding: $number;
+$border-radius: $number;

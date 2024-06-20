@@ -1,0 +1,27 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  &-gtc-var {
+    grid-template-columns: var(--grid-template-columns);
+  }
+
+  &-d-g {
+    display: grid;
+    @extend .#{$namespace}-gtc-var;
+  }
+
+  &-d-ig {
+    display: inline-grid;
+    @extend .#{$namespace}-gtc-var;
+  }
+
+  @each $i in $grid-gap {
+    &-grg-#{$i} {
+      grid-row-gap: 1rpx * $i;
+    }
+
+    &-gcg-#{$i} {
+      grid-column-gap: 1rpx * $i;
+    }
+  }
+}

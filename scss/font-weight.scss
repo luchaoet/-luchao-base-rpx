@@ -1,0 +1,10 @@
+@use 'config.scss' as *;
+@use 'sass:map';
+
+.#{$namespace} {
+	@each $k in map.keys($font-weight) {
+		&-fw-#{$k} {
+			font-weight: map.get($font-weight, $k);
+		}
+	}
+}

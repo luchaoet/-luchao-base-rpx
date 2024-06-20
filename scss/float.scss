@@ -1,0 +1,13 @@
+@use 'config.scss' as *;
+@use 'sass:string';
+
+.#{$namespace} {
+
+  @each $f in $float {
+    $n: string.slice($f, 1, 1);
+
+    &-f-#{$n} {
+      float: $f;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  @each $d in $deg {
+    &-t-rz-#{$d} {
+      transform: rotateZ(#{$d}deg)
+    }
+  }
+}

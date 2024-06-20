@@ -1,0 +1,12 @@
+@use 'config.scss' as *;
+@use 'sass:map';
+
+.#{$namespace} {
+
+  @each $k in map.keys($box-shadow) {
+    &-bs-#{$k} {
+      // unquote 删除引号
+      box-shadow: unquote(map.get($box-shadow, $k));
+    }
+  }
+}

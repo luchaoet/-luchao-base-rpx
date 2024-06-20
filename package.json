@@ -1,0 +1,19 @@
+{
+  "name": "@luchao/base-rpx",
+  "version": "1.0.0",
+  "description": "前端小程序项目基础css样式",
+  "main": "dist/style.css",
+  "author": "luchaoet",
+  "license": "ISC",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "sass": "^1.58.3",
+    "vite": "^4.5.3"
+  }
+}

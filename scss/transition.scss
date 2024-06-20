@@ -1,0 +1,16 @@
+@use 'config.scss' as *;
+@use 'sass:map';
+
+.#{$namespace} {
+  &-t-i {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  @each $k in map.keys($timing-function) {
+    &-ttf-#{$k} {
+      transition-timing-function: map.get($timing-function, $k);
+    }
+  }
+}

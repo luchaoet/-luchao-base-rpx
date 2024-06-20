@@ -1,0 +1,135 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+
+  // justify-content
+  &-jc-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    @extend .#{$namespace}-d-f;
+    justify-content: space-between;
+  }
+
+  &-jc-sa {
+    @extend .#{$namespace}-d-f;
+    justify-content: space-around;
+  }
+
+  &-jc-fe {
+    @extend .#{$namespace}-d-f;
+    justify-content: flex-end;
+  }
+
+  &-jc-fs {
+    @extend .#{$namespace}-d-f;
+    justify-content: flex-start;
+  }
+
+  &-jc-fe-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &-jc-sb-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-jc-ai-c {
+    @extend .#{$namespace}-d-f;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // align-items
+  &-ai-fs {
+    @extend .#{$namespace}-d-f;
+    align-items: flex-start;
+  }
+
+  &-ai-fe {
+    @extend .#{$namespace}-d-f;
+    align-items: flex-end;
+  }
+
+  &-ai-c {
+    @extend .#{$namespace}-d-f;
+    align-items: center;
+  }
+
+  // flex-direction
+  &-fd-rr {
+    @extend .#{$namespace}-d-f;
+    flex-direction: row-reverse;
+  }
+
+  &-fd-c {
+    @extend .#{$namespace}-d-f;
+    flex-direction: column;
+  }
+
+  &-fd-cr {
+    @extend .#{$namespace}-d-f;
+    flex-direction: column-reverse;
+  }
+
+  &-fd-r {
+    @extend .#{$namespace}-d-f;
+    flex-direction: row;
+  }
+
+  // flex-wrap
+  &-fw-w {
+    flex-wrap: wrap;
+  }
+
+  &-fw-wr {
+    flex-wrap: wrap-reverse;
+  }
+
+  &-fw-n {
+    flex-wrap: nowrap;
+  }
+
+  // flex-grow
+  &-fg-1 {
+    flex-grow: 1;
+  }
+
+  &-fg-0 {
+    flex-grow: 0;
+  }
+
+  // flex-shrink
+  &-fs-1 {
+    flex-shrink: 1;
+  }
+
+  &-fs-0 {
+    flex-shrink: 0;
+  }
+
+  &-fb-a {
+    flex-basis: auto;
+  }
+
+  &-flex-1 {
+    flex: 1 1 auto;
+  }
+
+  &-flex-0 {
+    flex: 0 0 auto;
+  }
+
+  // order
+  @each $i in $order {
+    &-o-#{$i} {
+      order: $i;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use 'config.scss' as *;
+@use 'sass:string';
+
+.#{$namespace} {
+  @each $i in $position {
+    $n: string.slice($i, 1, 1);
+
+    &-p-#{$n} {
+      position: $i;
+    }
+  }
+
+  @each $i in $direction {
+    $n: string.slice($i, 1, 1);
+
+    &-#{$n}-0 {
+      #{$i}: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use 'config.scss' as *;
+@use 'sass:string';
+
+.#{$namespace} {
+
+  @each $o in $overflow {
+    $n: string.slice($o, 1, 1);
+
+    &-ox-#{$n} {
+      overflow-x: $o;
+    }
+
+    &-oy-#{$n} {
+      overflow-y: $o;
+    }
+
+    &-o-#{$n} {
+      overflow: $o;
+    }
+  }
+}

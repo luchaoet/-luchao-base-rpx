@@ -1,0 +1,9 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+	@each $i in $font-size {
+		&-fs-#{$i} {
+			font-size: 1rpx * $i;
+		}
+	}
+}

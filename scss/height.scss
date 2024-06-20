@@ -1,0 +1,16 @@
+@use 'config.scss' as *;
+@use 'sass:map';
+
+.#{$namespace} {
+  @each $k in map.keys($height) {
+    &-h-#{$k} {
+      height: map.get($height, $k);
+    }
+  }
+
+  @each $k in map.keys($min-height) {
+    &-mh-#{$k} {
+      min-height: map.get($min-height, $k);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  @each $z in $z-index {
+
+    &-zi-#{$z} {
+      z-index: $z;
+    }
+  }
+}

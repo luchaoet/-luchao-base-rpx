@@ -1,0 +1,18 @@
+@use 'config.scss' as *;
+@use 'sass:map';
+
+.#{$namespace} {
+  &-mw-100per {
+    max-width: 100%;
+  }
+
+  &-mw-0 {
+    min-width: 0;
+  }
+
+  @each $k in map.keys($width) {
+    &-w-#{$k} {
+      width: map.get($width, $k);
+    }
+  }
+}

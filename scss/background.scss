@@ -1,0 +1,16 @@
+@use 'config.scss' as *;
+@use 'sass:map';
+
+.#{$namespace} {
+  @each $k in map.keys($background-color) {
+    &-bc-#{$k} {
+      background-color: map.get($background-color, $k);
+    }
+  }
+
+  @each $k in map.keys($background-repeat) {
+    &-br-#{$k} {
+      background-repeat: map.get($background-repeat, $k);
+    }
+  }
+}

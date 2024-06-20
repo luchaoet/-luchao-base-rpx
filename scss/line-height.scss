@@ -1,0 +1,15 @@
+@use 'config.scss' as *;
+
+.#{$namespace} {
+  @each $i in $line-height {
+    &-lh-#{$i} {
+      @if $i==1 {
+        line-height: 1;
+      }
+
+      @else {
+        line-height: 1rpx * $i;
+      }
+    }
+  }
+}
