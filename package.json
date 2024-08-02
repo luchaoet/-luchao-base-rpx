@@ -1,7 +1,7 @@
 {
   "name": "@luchao/base-rpx",
-  "version": "1.0.0",
-  "description": "前端小程序项目基础css样式",
+  "version": "1.0.1",
+  "description": "小程序项目基础css样式",
   "main": "dist/style.css",
   "author": "luchaoet",
   "license": "ISC",

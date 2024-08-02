@@ -10,6 +10,15 @@ page {
   padding: 0;
 }
 
+image {
+  display: inline-block;
+}
+
+view,
+text {
+  box-sizing: border-box;
+}
+
 .g-gtc-var, .g-d-ig, .g-d-g {
   grid-template-columns: var(--grid-template-columns);
 }
