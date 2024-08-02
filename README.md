@@ -5,7 +5,7 @@
     npm install @luchao/base-rpx --save
 
 ### 使用
-    ```js
+    ```javascript
     // 全局引入
     import "@luchao/base-rpx"
     ```

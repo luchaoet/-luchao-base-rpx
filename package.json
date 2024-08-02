@@ -1,9 +1,15 @@
 {
   "name": "@luchao/base-rpx",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "小程序项目基础css样式",
   "main": "dist/style.css",
-  "author": "luchaoet",
+  "author": "luchao",
+  "homepage": "https://github.com/luchaoet/base-rpx",
+  "keywords": [
+    "weixin",
+    "css",
+    "rpx"
+  ],
   "license": "ISC",
   "files": [
     "dist",
